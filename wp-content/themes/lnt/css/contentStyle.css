@@ -1,0 +1,40 @@
+.content{
+    max-height:100px;
+    max-width: 350px;
+    }
+.content-img{
+    text-align: center;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0%);
+    }
+.content-button{
+    padding: 10px;
+    text-align: center;
+ }
+.button-shape{
+        padding: 5px 10px;
+        border: none;
+        width: 100px;
+        border-radius: 15px;
+        background: rgb(33, 13, 218);
+        box-shadow: 1px 1px 1px rgba(4,30,66);
+        font-size: 18px;
+        transform: 2s;
+        outline: none;
+        color: white;
+ }
+.button-shape:hover{
+    cursor: pointer;
+    background:rgb(0,100,0);
+    color: #000;
+}
+a{
+    text-decoration: none;
+    padding-top: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: blue;
+}
+ 
