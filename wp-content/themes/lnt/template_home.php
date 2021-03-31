@@ -4,8 +4,16 @@ Template Name: Home Page
 */
 get_header();
 ?>
-<br/>
+    
     <?php echo do_shortcode('[smartslider3 slider="1"]');?>
+
+    <div class="chevron_wrapper">
+        <div class="chevron_container">
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+        </div>
+    </div>
      <div class="content-list">
         <div class="content-box">
         <div class="content-img-size">
@@ -49,7 +57,15 @@ View All</button></a>
 
         </div>
      </div>
-
+     
+     <div style="margin-left:20px; margin-right:20px">
+     <?php
+             while(have_posts()){
+                 the_post();
+                 the_content();
+             }?>
+    </div>
+    
 <?php
 get_footer();
 ?>

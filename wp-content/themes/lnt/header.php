@@ -29,7 +29,7 @@
                     <div class="sub-menu">
                         <ul>
                             <li><a href="#">Company</a></li>
-                            <li><a href="#">News & Events</a></li>
+                            <li><a href="http://localhost/ltipoc/LTI_POC/elementor-40/">News & Events</a></li>
                             <li><a href="#">Blogs</a></li>
                             <li><a href="#">Podcasts</a></li>
                             <li><a href="#">Alliances</a></li>

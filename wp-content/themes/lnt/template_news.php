@@ -5,12 +5,66 @@ Template Name: News Page
 get_header();
 ?>
  </div>
-        <div class="sliders">
             <figure>
-            <img style="height:400px; width:1400px;" src="<?php echo get_template_directory_uri();?>/images/Lti-img3.jpg">
+            <img style="width:100%;" src="<?php echo get_template_directory_uri();?>/images/Lti-img3.jpg">
             </figure>
-        </div>
-        <div class="wrapper">
+        
+
+            <div style="width:100%;">
+                <div style="width:70%; float: left">
+                <div class="paragraph">
+             <?php
+             while(have_posts()){
+                 the_post();
+                 the_content();
+             }?>
+             
+         </div>
+                    <!-- <div class="paragraph">
+                        <h2>News & Events</h2>
+                        </br>
+                        </br>
+                        <h3>LTI recognized as a Top Employer 2021 in the UK</h3>
+                        </br>
+                            <p>
+                                REFRESHED NEWS
+                                LTI in the UK has been recognized with Top Employer 2021 certification,
+                                by the Top <br> Employers Institute, the global authority recognizing excellence in people practices.
+                            </p>
+
+                            <p>
+                                The Top Employers Institute is an independent company that certifies organizations 
+                                based <br>on the participation and results of their HR Best Practices Survey.
+                            </p>
+                            <p>
+                                LTI has met all the standards set in this survey that covers 6 HR domains consisting
+                                of <br> 20 topics such as – People Strategy, Work Environment, Talent Acquisition, 
+                                Learning,<br> Well-being and Diversity & Inclusion, and more.
+                            </p>
+                            <p>
+                                “We’re glad that Top Employers Institute has recognized LTI in the UK. 
+                                This recognition <br>is a testament to the culture that inculcates learning and collaboration.
+                                Our employees are <br> at the heart of our progressive HR policies that truly inculcate
+                                a vibrant and <br> ever-engaging workplace,” remarked <b>Arusha Gupta, Head HR – Europe, LTI.</b>
+                            </p>
+                            </br>
+                            </br>
+                    </div> -->
+                   
+                </div>
+                <div class="column" style="width:30%; float: right;">
+                    <?php dynamic_sidebar('smartslider_area_1'); ?>
+                </div>
+            </div>
+            </br>
+            </br>
+            <div class="social-media">
+                        <p>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""><i class="fa fa-linkedin"></i></a></p>
+                    </div>
+        <!-- <div class="wrapper">
             <h2>Subscribe to our NewsLetter</h2>
             <div class="form-conteniar">
                 <form>
@@ -50,40 +104,10 @@ get_header();
                     </div>
                 </form>
             </div>
-         </div>
+         </div> -->
 
-         <div class="paragraph">
-             <h2>News & Events</h2>
-             <h3>LTI recognized as a Top Employer 2021 in the UK</h3>
-                 <p>
-                     REFRESHED NEWS
-                    LTI in the UK has been recognized with Top Employer 2021 certification,
-                     by the Top <br> Employers Institute, the global authority recognizing excellence in people practices.
-                 </p>
-
-                 <p>
-                    The Top Employers Institute is an independent company that certifies organizations 
-                    based <br>on the participation and results of their HR Best Practices Survey.
-                </p>
-                <p>
-                    LTI has met all the standards set in this survey that covers 6 HR domains consisting
-                    of <br> 20 topics such as – People Strategy, Work Environment, Talent Acquisition, 
-                    Learning,<br> Well-being and Diversity & Inclusion, and more.
-                 </p>
-                 <p>
-                    “We’re glad that Top Employers Institute has recognized LTI in the UK. 
-                    This recognition <br>is a testament to the culture that inculcates learning and collaboration.
-                    Our employees are <br> at the heart of our progressive HR policies that truly inculcate
-                    a vibrant and <br> ever-engaging workplace,” remarked <b>Arusha Gupta, Head HR – Europe, LTI.</b>
-                 </p>
-         </div>
-         <div class="social-media">
-             <p>Share this post :
-             <a href=""><i class="fa fa-facebook"></i></a>
-             <a href=""><i class="fa fa-twitter"></i></a>
-             <a href=""><i class="fa fa-linkedin"></i></a></p>
-         </div><hr>
-
+         
+    
 <?php
 get_footer();
 ?>
