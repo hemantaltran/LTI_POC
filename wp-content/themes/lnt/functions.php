@@ -9,7 +9,7 @@
 
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define( '_S_VERSION', '1.0.6' );
 }
 
 if ( ! function_exists( 'lnt_setup' ) ) :
@@ -142,11 +142,13 @@ add_action( 'widgets_init', 'lnt_widgets_init' );
 function lnt_scripts() {
 	wp_enqueue_style( 'lnt-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_enqueue_style( 'lnt-home', get_template_directory_uri().'/css/homeStyles.css', array(), _S_VERSION );
+	wp_enqueue_style( 'lnt-Offering', get_template_directory_uri().'/css/offeringStyle.css', array(), _S_VERSION );
 	wp_enqueue_style( 'lnt-register', get_template_directory_uri().'/css/register.css', array(), _S_VERSION );
 	wp_enqueue_style( 'lnt-fa', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), _S_VERSION );
 	wp_style_add_data( 'lnt-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'lnt-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'lnt-script', get_template_directory_uri() . '/js/script.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

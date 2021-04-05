@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 55px;
+}
+.tabs {
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.tabs .tab-header {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 19px 0;
+}
+.tabs .tab-header li {
+  display: inline;
+}
+.tabs .tab-header li a {
+  font-size: 12pt;
+  line-height: 20px;
+  color: #494949;
+  border: 0;
+  text-decoration: none;
+  font-family: sans-serif;
+  padding: 15px 55px;
+}
+.tabs .tab-header li a:hover {
+  font-size: 12pt;
+  line-height: 20px;
+  color: #00ccff;
+  border: 0;
+  text-decoration: none;
+  font-family: sans-serif;
+  padding: 15px 55px;
+}
+.tabs .tab-header li a.active {
+  border-bottom: 3px solid rgb(58, 141, 196);
+  color: #00ccff;
+}
+
+.tab-content {
+  width: 100%;
+  display: inline-block;
+  background-color: #fff;
+  padding-bottom: 40px;
+  min-height: 400px;
+}
+
+.content-box.active {
+  display: block;
+}
+.column {
+  font-family: sans-serif;
+  font-size: 22px;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  width: 30%;
+  border: 1px solid gainsboro;
+  border-radius: 15px;
+  margin: 25px 15px 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.column:hover {
+  box-shadow: 0 2px 5px #00000045;
+}
+.column img {
+  border-radius: 50%;
+  max-width: 50px;
+}
+.tab-content .content-box a {
+  font-size: 18px;
+  font-family: sans-serif;
+}

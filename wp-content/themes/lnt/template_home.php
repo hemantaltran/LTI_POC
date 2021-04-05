@@ -33,7 +33,7 @@ digital organization, and LTI is a key strategic partner in our ERP transformati
 View All</button></a>
 </div>
     </div>
-         <div class="content-box">
+         <div class="content-box2">
              <br>
             <div class="content-title">Blog</div>
 <p><a href="#">COVID-19 Impact Series : Healthcare <br> Transformation leveraging <br> IT innovation</a></p>
@@ -45,7 +45,7 @@ View All</button></a>
 </div>
 
         </div>
-        <div class="content-box">
+        <div class="content-box3">
             <br>
 <div class="content-title"> Case Study</div>
 <p><a href="#">Speedy Microsoft <br> Dynamic 365 <br> Implementation</a></p>

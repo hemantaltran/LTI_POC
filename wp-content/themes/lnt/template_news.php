@@ -63,7 +63,7 @@ get_header();
                         <a href=""></a>
                         <a href=""></a>
                         <a href=""><i class="fa fa-linkedin"></i></a></p>
-                    </div>
+                    </div></div>
         <!-- <div class="wrapper">
             <h2>Subscribe to our NewsLetter</h2>
             <div class="form-conteniar">
