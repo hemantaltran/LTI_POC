@@ -1,0 +1,74 @@
+.resource {
+  width: 80%;
+  margin-left: 10%;
+  margin-left: 10%;
+  background: #fff;
+}
+.resource h2 {
+  padding-left: 45%;
+  font-size: 2.3rem;
+  color: #00008c;
+  font-family: BwModelica-Light;
+  font-weight: normal;
+  text-transform: inherit !important;
+  line-height: normal;
+}
+.info-list {
+  width: 80%;
+  margin-left: 10%;
+  margin-left: 10%;
+  background: #fff;
+  padding: 1em;
+  font-family: sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.info-box:nth-child(odd) {
+  padding-left: 10px;
+  width: 310px;
+  height: 350px;
+  background: #fff;
+  border-radius: 1px;
+  position: relative;
+}
+.info-box:nth-child(even) {
+  padding-left: 10px;
+  width: 310px;
+  height: 350px;
+  background: #fff;
+  border-radius: 1px;
+  position: relative;
+}
+.info-box .img-icon {
+  margin-top: 6%;
+  height: 30%;
+  width: 25%;
+  display: inline-block;
+  position: absolute;
+}
+.info-box a {
+  text-decoration: none;
+  padding-left: 10px;
+  padding-left: 90px;
+  color: #00008c;
+}
+.info-box a:hover {
+  text-decoration: none;
+  padding-left: 90px;
+  color: rgb(201, 134, 18);
+}
+.info-box h3 {
+  line-height: 17pt;
+  font-family: sans-serif;
+  padding-left: 90px;
+}
+
+.info-box p {
+  font-family: BwModelica-Regular !important;
+  font-weight: normal;
+  font-size: 12pt;
+  line-height: 17pt;
+  color: #343434;
+  padding-left: 90px;
+}

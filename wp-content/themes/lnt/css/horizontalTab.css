@@ -3,9 +3,6 @@
   padding: 0;
 }
 
-body {
-  padding: 55px;
-}
 .tabs {
   width: 1000px;
   height: auto;
@@ -43,6 +40,11 @@ body {
   color: #00ccff;
 }
 
+.active_tabs {
+  border-bottom: 3px solid rgb(58, 141, 196);
+  color: #00ccff;
+}
+
 .tab-content {
   width: 100%;
   display: inline-block;
@@ -51,7 +53,7 @@ body {
   min-height: 400px;
 }
 
-.content-box.active {
+.tab_content-box.active {
   display: block;
 }
 .column {

@@ -509,3 +509,104 @@ footer {
     opacity: 1;
   }
 }
+
+/*Footer - Contact US CSS*/
+.container .title {
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+}
+.container form .user-details {
+  display: flex;
+  font-size: 12px;
+  font-family: sans-serif;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 5px);
+}
+.user-details .input-box .details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box .details i {
+  color: red;
+  font-size: 15px;
+}
+
+.user-details .input-box input {
+  height: 30px;
+  width: 80%;
+  outline: none;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+form .user-details .input-box .select-box {
+  margin-bottom: 15px;
+  width: 80%;
+  height: 60%;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+  border-color: rgb(65, 62, 62);
+}
+form .user-details .input-box-two {
+  margin-bottom: 15px;
+  width: calc(150% / 2 - 5px);
+}
+.user-details .input-box-two .details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.user-details .input-box-two input {
+  height: 60px;
+  width: 130%;
+  outline: none;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box-two input:focus {
+  border-color: #9b59b9;
+}
+
+.input-name {
+  font-size: 12px;
+  font-family: sans-serif;
+  padding-left: 20%;
+}
+.input-name a {
+  text-decoration: none;
+  color: rgb(25, 173, 231);
+}
+.button {
+  background-color: rgb(28, 28, 141);
+  height: 35px;
+  position: absolute;
+  left: 45%;
+  width: 10%;
+  outline: none;
+  color: #fff;
+  font-size: 13px;
+}
+.button:hover {
+  background-color: rgb(25, 173, 231);
+  cursor: pointer;
+}
+.button:focus {
+  background-color: #f8c22e;
+}

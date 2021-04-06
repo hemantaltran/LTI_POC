@@ -6,11 +6,11 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-RewriteBase /ltipoc/LTI_POC/
+RewriteBase /LTI_POC/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /ltipoc/LTI_POC/index.php [L]
+RewriteRule . /LTI_POC/index.php [L]
 </IfModule>
 
 # END WordPress

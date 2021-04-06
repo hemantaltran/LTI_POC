@@ -146,6 +146,7 @@ function lnt_scripts() {
 	wp_enqueue_style( 'lnt-register', get_template_directory_uri().'/css/register.css', array(), _S_VERSION );
 	wp_enqueue_style( 'lnt-fa', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), _S_VERSION );
 	wp_style_add_data( 'lnt-style', 'rtl', 'replace' );
+	wp_enqueue_style( 'lnt-horizontalTab', get_template_directory_uri().'/css/horizontalTab.css', array(), _S_VERSION );
 
 	wp_enqueue_script( 'lnt-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'lnt-script', get_template_directory_uri() . '/js/script.js', array(), _S_VERSION, true );
@@ -154,6 +155,11 @@ function lnt_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
+	wp_enqueue_style( 'lnt-resource', get_template_directory_uri().'/css/resourceStyle.css', array(), _S_VERSION );
+	
+	wp_enqueue_style( 'lnt-bootstrapcore', "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css", array(), _S_VERSION );
+
+	wp_enqueue_style( 'lnt-bootstrap', get_template_directory_uri().'/css/bootstrap.css', array(), _S_VERSION );
 }
 add_action( 'wp_enqueue_scripts', 'lnt_scripts' );
 
