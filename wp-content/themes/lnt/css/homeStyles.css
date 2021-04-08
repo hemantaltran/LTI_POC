@@ -13,8 +13,6 @@ body {
   width: 100%;
   height: 55px;
   display: flex;
-  position: relative;
-  z-index: 9999 !important;
 }
 .Navbar ul {
   flex: 50%;
@@ -25,7 +23,7 @@ body {
 }
 .Navbar ul li {
   width: 110px;
-  margin: 15px;
+  margin: 10px;
   padding: 15px;
   list-style: none;
   padding: 5px;
@@ -33,13 +31,13 @@ body {
 .Navbar ul li a {
   margin-left: 10px;
   text-decoration: none;
-  color: #000;
+  color: rgb(85, 82, 82);
   font-size: 15px;
 }
 .Navbar ul li a:hover {
   margin-left: 10px;
   text-decoration: none;
-  color: rgb(85, 82, 82);
+  color: #000;
   font-size: 15px;
 }
 .Navbar ul li i {
@@ -50,29 +48,49 @@ body {
   display: none;
 }
 .Navbar ul li:hover .sub-menu {
+  background-color: #fff;
   display: block;
   position: absolute;
-  background: #fff;
-  margin-top: 15px;
-  margin-left: -15px;
+  margin-top: 5px;
+  margin-left: -20px;
 }
 
 .Navbar ul li:hover .sub-menu ul {
   display: block;
-  margin: 10px;
+  padding-top: 2%;
+  margin: 5px;
 }
 .Navbar ul li:hover .sub-menu ul li {
-  width: 180px;
+  width: 160px;
   padding: 3px;
-  border-bottom: 1px dotted #fff;
+  border-bottom: 1px dotted #000;
   background: transparent;
   border-radius: 0;
   text-align: left;
+  font-size: 12px;
+}
+.Navbar ul li:hover .sub-menu ul li:hover {
+  width: 160px;
+  padding: 3px;
+  border-bottom: 1px dotted #000;
+  background: rgb(248, 245, 245);
+  border-radius: 0;
+  text-align: left;
+  font-size: 12px;
+}
+.Navbar ul li:hover .sub-menu ul li a {
+  font-size: 13px;
+  color: rgb(85, 82, 82);
+}
+
+.Navbar ul li:hover .sub-menu ul li a:hover {
+  color: #000;
   font-size: 13px;
 }
 .Navbar ul li:hover .sub-menu ul li:last-child {
   border-bottom: none;
 }
+
 .active,
 .Navbar ul li:hover {
   border-radius: 3px;
@@ -81,41 +99,36 @@ body {
 .menu-bar {
   background: #fff;
   text-align: center;
-  position: relative;
-  z-index: 8888 !important;
 }
 .menu-bar .img_icon {
   height: 60px;
   width: 70px;
   margin: 10px 10px 10px 10px;
   position: relative;
-  left: -170px;
+  left: -320px;
 }
 .menu-bar ul {
+  padding-left: 25%;
   display: inline-flex;
   list-style: none;
   color: #000;
 }
 .menu-bar ul li {
-  width: 120px;
+  width: 130px;
   margin: 15px;
-  padding: 15px;
-  padding-left: 100px;
+  padding: 10px;
+  padding-left: 50px;
 }
 .menu-bar ul li a {
+  margin-left: -10px;
   text-decoration: none;
-  color: #000;
-  font-size: 15px;
-}
-.menu-bar ul li a {
-  text-decoration: none;
-  color: #000;
   color: rgb(85, 82, 82);
   font-size: 15px;
 }
 .active,
-.menu-bar ul li:hover {
-  border-radius: 3px;
+.menu-bar ul li a:hover {
+  color: #000;
+  border-radius: 5px;
 }
 .menu-bar .fa {
   margin-right: 8px;
@@ -124,34 +137,46 @@ body {
   display: none;
 }
 .menu-bar ul li:hover .sub-menu-1 {
+  width: 250px;
   display: block;
   position: absolute;
   background: #fff;
-  margin-top: 15px;
-  margin-left: -15px;
+  margin-top: 3px;
+  margin-left: -40px;
 }
 
 .menu-bar ul li:hover .sub-menu-1 ul {
   display: block;
-  margin: 10px;
+  margin: 5px;
 }
 .menu-bar ul li:hover .sub-menu-1 ul li {
-  width: 180px;
+  text-align: left;
+  width: 200px;
+  margin-left: -30%;
   padding: 3px;
   border-bottom: 1px dotted #000;
   background: transparent;
   border-radius: 0;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:hover {
   text-align: left;
+  width: 200px;
+  margin-left: -30%;
+  padding: 3px;
+  border-bottom: 1px dotted #000;
+  background: rgb(248, 245, 245);
+  border-radius: 0;
 }
 .menu-bar ul li:hover .sub-menu-1 ul li:last-child {
   border-bottom: none;
 }
 .menu-bar ul li .sub-menu-1 ul li a {
+  margin-left: 3%;
   font-size: 13px;
-  color: #000;
+  color: rgb(85, 82, 82);
 }
 .menu-bar ul li:hover .sub-menu-1 ul li a:hover {
-  color: rgb(85, 82, 82);
+  color: #000;
   font-size: 13px;
 }
 .sub-menu-2 {
@@ -160,8 +185,8 @@ body {
 .hover-me:hover .sub-menu-2 {
   position: absolute;
   display: block;
-  margin-top: -40px;
-  margin-left: 140px;
+  margin-top: -30px;
+  margin-left: -220px;
   background: #fff;
 }
 
@@ -294,6 +319,16 @@ body {
 
 /* paragraph content*/
 
+.slide {
+  width: 100%;
+  transition: 2s;
+}
+
+.carousel-item img {
+  width: 1400px;
+  height: 500px;
+}
+
 .sliders {
   margin: 0px 10px;
   overflow: hidden;
@@ -320,104 +355,6 @@ body {
   padding-left: 20px;
   font-family: sans-serif;
   text-align: justify;
-}
-/*Footer*/
-.social-media {
-  padding-left: 35%;
-  font-size: 18px;
-  margin-top: 35px;
-}
-
-.social-media .fa-facebook {
-  color: rgb(7, 185, 230);
-}
-.social-media .fa-twitter {
-  color: rgb(7, 185, 230);
-}
-.social-media .fa-linkedin {
-  color: rgb(7, 185, 230);
-}
-hr {
-  margin-top: 20px;
-}
-
-footer {
-  margin-top: 40px;
-  background: #fff;
-  width: 100vw;
-  font-family: sans-serif;
-  padding-top: 5px;
-  color: #fff;
-}
-.footer-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
-.footer-content p {
-  max-width: 500px;
-  margin: 10px auto;
-  line-height: 28px;
-  font-size: 14px;
-}
-.socials {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 1rem 0 3rem 0;
-}
-.socials li {
-  margin: 0 10px;
-}
-.socials a {
-  text-decoration: none;
-  color: #000;
-}
-.socials a i {
-  font-size: 1.1rem;
-  transition: color 0.4s ease;
-}
-.socials a:hover {
-  color: black;
-}
-
-.footer-bottom {
-  background: rgb(228, 216, 216);
-  width: 100vw;
-  height: 5px;
-  padding: 20px 0;
-  text-align: center;
-}
-.footer-bottom p {
-  font-size: 15px;
-  word-spacing: 2px;
-  text-transform: capitalize;
-  color: #000;
-}
-
-.img_icon2 {
-  height: 40px;
-  width: 40px;
-  position: relative;
-  left: -350px;
-  background-color: yellowgreen;
-}
-.separator ul li {
-  position: relative;
-  padding: 0px 10px;
-  display: inline-block;
-  font-size: 50px;
-  left: -350px;
-}
-.footer-content .socials li p {
-  position: relative;
-  padding: 0px 10px;
-  display: inline-block;
-  font-size: 15px;
-  left: -370px;
 }
 
 .chevron_wrapper {
@@ -509,6 +446,233 @@ footer {
     opacity: 1;
   }
 }
+
+/*
+New Footer CSS
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: white;
+}
+
+body {
+  font: 16px/1.6 Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 190px;
+}
+
+header h1 {
+  font: normal 32px/1.5 "Open Sans", sans-serif;
+  color: #3f71ae;
+  padding-bottom: 16px;
+}
+
+header h2 {
+  color: #f05283;
+}
+
+header span {
+  color: #3f71ea;
+}
+
+/* The footer is fixed to the bottom of the page */
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+@media (max-height: 800px) {
+  footer {
+    position: static;
+  }
+  header {
+    padding-top: 40px;
+  }
+}
+
+.footer-distributed {
+  background-color: white;
+  box-sizing: border-box;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  font: bold 16px sans-serif;
+  padding: none;
+  margin-top: 80px;
+  padding-top: 1%;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 30%;
+
+  text-align: left;
+}
+
+.footer-distributed h3 {
+  color: #154360;
+  font: normal 36px "Cookie", cursive;
+  margin: 0;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img {
+  width: 30%;
+}
+
+.footer-distributed h3 span {
+  color: #e0ac1c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #154360;
+  margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #154360;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 32%;
+
+  text-align: left;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #154360;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #154360;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: #e0ac1c;
+  text-decoration: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 30%;
+  text-align: left;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #154360;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #154360;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+@media (max-width: 880px) {
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+}
+/*
+Contact US CSS 
+*/
 
 /*Footer - Contact US CSS*/
 .container .title {

@@ -11,27 +11,87 @@
 
 ?>
 
-<footer>
-             <div class="footer-content">
-                 <ul class="socials">
-                    <img class="img_icon2" src="<?php echo get_template_directory_uri()?>/images/icon2.jpg" alt="">
-                    <div class="separator">
-                        <ul>
-                            <li>|</li>
-                        </ul>
-                    </div>
-                    <li><p>A larsen &amp; Turbo <br>Group company</p></li>
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                 </ul>
-             </div>
-             <div class="footer-bottom">
-                 <p>© 2021 Larsen &amp; Toubro Infotech Limited</p>
-             </div>
-         </footer>
+    <footer class="footer-distributed">
+        <hr>
+        <div class="footer-left">
+
+            <img src="https://www.lntinfotech.com/wp-content/themes/LnTInfotech/images/parent-company-logo.png">
+            <h3>About<span>LTI</span></h3>
+
+            <p class="footer-links">
+                <a href="https://www.lntinfotech.com/blogs/"><span class="avia-bullet"></span><span
+                        class="avia-menu-text">Blogs</span><span class="avia-menu-fx"><span
+                            class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+                |
+                <a href="https://www.lntinfotech.com/careers/"><span class="avia-bullet"></span><span
+                        class="avia-menu-text">Careers</span><span class="avia-menu-fx"><span
+                            class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+                |
+                <a href="https://www.lntinfotech.com/company/"><span class="avia-bullet"></span><span
+                        class="avia-menu-text">Company</span><span class="avia-menu-fx"><span
+                            class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+                |
+                <a href="https://www.lntinfotech.com/investors/"><span class="avia-bullet"></span><span
+                        class="avia-menu-text">Investors</span><span class="avia-menu-fx"><span
+                            class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+                |
+                <a href="https://www.lntinfotech.com/newsletters/"><span class="avia-bullet"></span><span
+                        class="avia-menu-text">Newsletters</span><span class="avia-menu-fx"><span
+                            class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+            </p>
+
+
+            <p class="footer-company-name">© 2021 Larsen & Toubro Infotech Limited</p>
+            <p class="footer-links">
+                <a href="https://www.lntinfotech.com/accessibility/"><span class="avia-bullet"></span><span
+                        class="avia-menu-text">Accessibility</span><span class="avia-menu-fx"><span
+                            class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+                |
+                <a href="https://www.lntinfotech.com/sitemap/"><span class="avia-bullet"></span><span
+                        class="avia-menu-text">Sitemap</span><span class="avia-menu-fx"><span
+                            class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+                |
+                <a href="https://www.lntinfotech.com/general-privacy-policy/"><span class="avia-bullet"></span><span
+                        class="avia-menu-text">Privacy
+                        Policy</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span
+                                class="avia-arrow"></span></span></span></a>
+            </p>
+
+        </div>
+
+
+        <div class="footer-center">
+            <div>
+                <p><span>25-31 Road Number 7 KIADB Industrial Area 2nd Phase</span>
+                    Bengaluru, Karnataka 560066</p>
+            </div>
+
+            <div>
+                <p>080 662-42424</p>
+            </div>
+            <div>
+                <p> Follow us at <a href="https://twitter.com/LTI_Global">@LTI_Global</a> </p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                LTI (NSE: LTI) is a global technology consulting and digital solutions Company helping more than 400 clients succeed in a converging world. With operations in 31
+                countries, we go the extra mile for our clients and accelerate their digital transformation with LTI’s Mosaic platform enabling their mobile, social, analytics, IoT and cloud journeys.
+            </p>
+            
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
          <div id="sticky-contact">
             <a href="#">Contact us</a>
         </div>
@@ -221,5 +281,13 @@
 	
 	
 <?php wp_footer(); ?>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
 </body>
  </html>

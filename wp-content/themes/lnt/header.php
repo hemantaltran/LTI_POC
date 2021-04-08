@@ -22,7 +22,7 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-           <div class="Navbar">
+                <div class="Navbar">
             <ul>
                 <li><i class="fa fa-search"></i></li>
                 <li><a href="#">About Us</a>
@@ -45,8 +45,7 @@
         </div>
         <div class="menu-bar">
         <ul>
-			
-            <img class="img_icon" src="<?php echo get_template_directory_uri();?>/images/Lti-icon.jpg" alt="LTI icon">
+            <img class="img_icon" src="<?php echo get_template_directory_uri();?>/images/Lti-icon.jpg">
             <li><a href="#">Industries</a>
                 <div class="sub-menu-1">
                     <ul>
