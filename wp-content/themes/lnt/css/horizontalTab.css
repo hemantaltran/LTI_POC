@@ -53,6 +53,14 @@
   min-height: 400px;
 }
 
+.tab-timeline-content {
+  width: 20%;
+  display: inline-block;
+  background-color: #fff;
+  padding-bottom: 40px;
+  min-height: 400px;
+}
+
 .tab_content-box.active {
   display: block;
 }
@@ -79,9 +87,4 @@
 .tab-content .content-box a {
   font-size: 18px;
   font-family: sans-serif;
-}
-
-.active_tabs {
-  border-bottom: 3px solid rgb(58, 141, 196);
-  color: #00ccff;
 }

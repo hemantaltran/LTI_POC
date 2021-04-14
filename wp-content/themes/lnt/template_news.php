@@ -6,7 +6,7 @@ get_header();
 ?>
  </div>
             <figure>
-            <img style="width:100%;" src="<?php echo get_template_directory_uri();?>/images/Lti-img3.jpg">
+                <a href="http://localhost:8888/LTI_POC/"><img style="width:100%" src="<?php echo get_template_directory_uri();?>/images/Lti-img3.jpg" alt="http://localhost:8888/LTI_POC/"></a>
             </figure>
         
 
@@ -53,7 +53,7 @@ get_header();
                    
                 </div>
                 <div class="column" style="width:30%; float: right;">
-                    <?php dynamic_sidebar('smartslider_area_1'); ?>
+                
                 </div>
             </div>
             </br>
@@ -105,9 +105,3 @@ get_header();
                 </form>
             </div>
          </div> -->
-
-         
-    
-<?php
-get_footer();
-?>

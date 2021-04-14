@@ -18,11 +18,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
+    
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/homeStyles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-                <div class="Navbar">
+<div class = "custom-Header">
+        <div class="Navbar">
             <ul>
                 <li><i class="fa fa-search"></i></li>
                 <li><a href="#">About Us</a>
@@ -35,7 +40,7 @@
                             <li><a href="#">Alliances</a></li>
                             <li><a href="#">Social Responsibilities</a></li>
                             <li><a href="#">Media kit</a></li>
-                            <li><a href="#">Global Footprint</a></li>
+                            <li><a href="http://localhost:8888/LTI_POC/global-footprint/">Global Footprint</a></li>
                         </ul></div>
                 
                 </li>
@@ -45,7 +50,8 @@
         </div>
         <div class="menu-bar">
         <ul>
-            <img class="img_icon" src="<?php echo get_template_directory_uri();?>/images/Lti-icon.jpg">
+
+            <a href="http://localhost:8888/LTI_POC/"><img class="img_icon" src="<?php echo get_template_directory_uri();?>/images/Lti-icon.jpg" alt="LTI icon"></a>
             <li><a href="#">Industries</a>
                 <div class="sub-menu-1">
                     <ul>
@@ -108,7 +114,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="#">Cloud & Infrastructure Service(CIS)</a></li>
+                        <li><a href="#">Cloud & Infrastructure Service</a></li>
                         <li><a href="#">Agile</a></li>
                         <li><a href="#">Assurance and Quality Engineering</a></li>
                         <li><a href="#">Cyber defense Resiliency Service</a></li>
@@ -176,4 +182,5 @@
             </li>
         </ul>
      </div>
+ </div>
 	 

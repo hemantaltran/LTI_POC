@@ -62,14 +62,17 @@
 
         <div class="footer-center">
             <div>
-                <p><span>25-31 Road Number 7 KIADB Industrial Area 2nd Phase</span>
+                <p>25-31 Road Number 7 KIADB Industrial Area 2nd Phase
                     Bengaluru, Karnataka 560066</p>
             </div>
 
             <div>
+                <br>
                 <p>080 662-42424</p>
             </div>
+
             <div>
+                <br>
                 <p> Follow us at <a href="https://twitter.com/LTI_Global">@LTI_Global</a> </p>
             </div>
         </div>

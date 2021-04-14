@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Home Page
+Template Name: Home Page 
  <?php echo do_shortcode('[smartslider3 slider="1"]');?>
 */
 get_header();
@@ -13,7 +13,7 @@ get_header();
             <input type="radio" name="radio-btn" id="radio4">
 
             <?php $slider = new WP_Query(["post_type"=>"sliders",  'orderby' => 'menu_order', 
-    'order' => 'ASC', ]);
+             'order' => 'ASC', ]);
             if ($slider -> have_posts()){
                 $i = 0;
                 while ($slider -> have_posts()){
@@ -23,35 +23,35 @@ get_header();
       
             <div class="slide <?php if ($i == 0){ echo 'first'; }?>"> 
                 <?php if (get_field('video_url')){?>  <img class="auto-play-video" src="<?php
-echo get_the_post_thumbnail_url(get_the_ID(),'full'); ?>" data-bs-toggle="modal"
+                    echo get_the_post_thumbnail_url(get_the_ID(),'full'); ?>" data-bs-toggle="modal"
                     data-bs-target="#exampleModal">
 
                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">LNT Infotech</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
+                     </div>
+                    <div class="modal-body">
 
                     <iframe width="480" height="315" src="https://www.youtube.com/embed/CKMH2WxcxDU?rel=0"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
-                </div>
-                <div class="modal-footer">
+                    </div>
+                    <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
+                    </div>
+                     </div>
+                    </div>
+                    </div>
                 <?php } else the_post_thumbnail(); ?> 
             </div>
 
-           <?php 
-           $i++;
-                }
+             <?php 
+                    $i++;
+                     }
             }
             ?>
 
@@ -111,7 +111,7 @@ digital organization, and LTI is a key strategic partner in our ERP transformati
 <div class="content-text"><b>Marcus Galafassi</b></div>
 <p>VP and CIO-Otis Elevator Co</p>
 <div class="content-button">
-<a href="#" target="_top"><button class="button-shape">
+<a href="http://localhost:8888/LTI_POC/newsevent/" target="_top"><button class="button-shape">
 View All</button></a>
 </div>
     </div>
@@ -122,7 +122,7 @@ View All</button></a>
 <div class="content-text"><b>Vijay SR</b></div>
 <p>AVP-Leader for Insurance Consulting and Transformation,CST</p>
 <div class="content-button">
-<a href="#" target="_top"><button class="button-shape">
+<a href="http://localhost:8888/LTI_POC/newsevent/" target="_top"><button class="button-shape">
 View All</button></a>
 </div>
 
