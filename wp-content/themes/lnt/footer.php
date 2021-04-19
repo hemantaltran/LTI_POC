@@ -100,11 +100,14 @@
         </div>
         <div style="display:none;" id="sticky-contact-form">
       <div class="sticky-contact-form-wrapp">
-	     <h1 class="title text-center">Contact us</h1>
-         <span class="sticky-contact-form-close-btn"><img src="https://www.lntinfotech.com/wp-content/uploads/2019/07/close-button.png" /></span>
          <div role="form" class="wpcf7" id="wpcf7-f1678-o1" lang="en-US" dir="ltr">
 <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-<form action="#">
+                   <div class="container-contact-box">
+                <div class="title">Contact us</div>
+                <div class="cancelbtn">
+                    <i class="fa fa-window-close sticky-contact-form-close-btn"></i>
+                   </div>
+                <form action="#">
                     <div class="user-details">
                         <div class="input-box">
                             <span class="details">First Name <i>*</i></span>
@@ -117,13 +120,13 @@
                         </div>
 
                         <div class="input-box">
-                            <span class="details">Email<i>*</i></span>
+                            <span class="details">Email Address<i>*</i></span>
                             <input type="text" required>
                         </div>
 
                         <div class="input-box">
                             <span class="details">Contact Number</span>
-                            <input type="text">
+                            <input type="text" required>
                         </div>
 
                         <div class="input-box">
@@ -218,13 +221,15 @@
                         <div class="input-name">
                             <input type="checkbox" id="cb1" class="check-button">
                             <label for="cb1" class="check">I agree to receive communication from LTI.<br>
-                            <p>Refer<a> LTI privacy policy</a> to know more about how we maintain privacy about your data.</p></label>
+                            </label>
+                            <p>Refer<a> LTI privacy policy</a> to know more about how we maintain privacy about your data.</p>
                         </div>
                         <div class="input-name">
-                            <input class="button" type="submit" value="Submit">
+                            <input class="contact-button" type="submit" value="Submit">
                         </div>
                     </div>
                 </form>
+            </div>
 <noscript>
 			<div class="wpcf7-response-output wpcf7-spam-blocked">Your browser does not support JavaScript!. Please enable javascript in your browser in order to get form work properly.</div>
 	</noscript><script type='text/javascript'>

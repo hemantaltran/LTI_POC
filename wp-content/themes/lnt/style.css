@@ -1006,6 +1006,11 @@ textarea {
   bottom: 0;
   left: 0;
   padding-top: 15px;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: fff;
 }
 #sticky-contact-form .sticky-contact-form-wrapp {
   width: 35%;

@@ -1,0 +1,74 @@
+.stock-box {
+  margin-top: 0%;
+  margin-left: 0%;
+  width: 350px;
+  height: 310px;
+  background: rgba(141, 146, 146, 0.2);
+}
+.stock-box .stock-header {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 5%;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+}
+.stock-box .stock-header .header-ref {
+  margin-left: 40%;
+  display: inline-block;
+  position: relative;
+}
+.stock-box .stock-header-2 {
+  display: inline-block;
+  position: relative;
+  margin-left: 40%;
+}
+.stock-box .stock-header-2 .blue-clr {
+  font-size: 13px;
+  color: #4a8bc1;
+  text-decoration: none;
+}
+.stock-box .stock-header-2 .grey-clr {
+  font-size: 13px;
+  color: #666;
+  text-decoration: none;
+}
+hr {
+  height: 0px !important;
+  background-color: #abb0b3;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.stock-box .stock-content .date-content {
+  text-align: right;
+  padding-right: 50px;
+  font-family: BwModelica-Regular !important;
+  font-size: 15px;
+  color: #666;
+}
+.info-content-box {
+  font-family: BwModelica-Regular !important;
+  font-weight: normal;
+  margin-left: 5%;
+  font-size: 12pt;
+  color: #666;
+  line-height: 10pt;
+}
+.info-content-box .current-data {
+  line-height: 17pt;
+}
+.info-content-box .red-Font {
+  color: red;
+  font-size: 15pt;
+}
+.info-content-box .blue-Font {
+  color: rgb(40, 160, 207);
+  font-size: 15pt;
+}
+.info-content-box .M-T-5 {
+  line-height: 16pt;
+}
+.info-content-box .M-T-6 {
+  font-size: 10pt;
+  word-spacing: 5px;
+  padding-left: 70%;
+}

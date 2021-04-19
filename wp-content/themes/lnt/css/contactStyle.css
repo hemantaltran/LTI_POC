@@ -1,0 +1,136 @@
+.container-contact-box {
+  max-width: 600px;
+  width: 100%;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+.container-contact-box .title {
+  color: rgb(62, 62, 221);
+  font-family: "Open Sans", "Fira Sans", "Lucida Sans", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  margin-left: 30%;
+  display: inline-block;
+}
+
+.container-contact-box .cancelbtn {
+  display: inline-block;
+  position: relative;
+  left: 30%;
+  padding-top: 3%;
+}
+.container-contact-box .cancelbtn .far {
+  color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+.container-contact-box form .user-details {
+  display: flex;
+  font-size: 12px;
+  font-family: sans-serif;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 5px);
+}
+.user-details .input-box .details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box .details i {
+  color: red;
+  font-size: 15px;
+}
+
+.user-details .input-box input {
+  height: 30px;
+  width: 90%;
+  outline: none;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 1px;
+  transition: all 0.3s ease;
+}
+
+form .user-details .input-box .select-box {
+  border-color: #ccc;
+  margin-bottom: 15px;
+  width: 90%;
+  height: 60%;
+  outline: 0px;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+  box-shadow: 1px 1px 0px 0px rgb(184, 178, 178);
+}
+form .user-details .input-box-two {
+  margin-bottom: 15px;
+  width: calc(150% / 2 - 5px);
+}
+.user-details .input-box-two .details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.user-details .input-box-two input {
+  height: 60px;
+  width: 130%;
+  outline: none;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 1px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box-two input:focus {
+  box-shadow: 1px 1px 0px 0px rgb(184, 178, 178);
+}
+
+.input-name {
+  font-size: 8pt !important;
+  line-height: 12pt;
+  font-weight: bold;
+  text-decoration: none;
+  color: #232323 !important;
+  padding-left: 20%;
+}
+.input-name a {
+  text-decoration: none;
+  color: rgb(25, 173, 231);
+}
+.input-name p {
+  font-size: 8pt !important;
+  line-height: 12pt;
+  font-weight: bold;
+  margin-left: -20%;
+  text-decoration: none;
+  color: #232323 !important;
+}
+.contact-button {
+  background-color: rgb(28, 28, 141);
+  padding-right: 50%;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 4px 2px 0px 80px;
+  cursor: pointer;
+  position: absolute;
+}
+.contact-button:hover {
+  background-color: rgb(25, 173, 231);
+}

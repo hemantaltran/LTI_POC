@@ -147,7 +147,10 @@ function lnt_scripts() {
 	wp_enqueue_style( 'lnt-fa', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), _S_VERSION );
 	wp_style_add_data( 'lnt-style', 'rtl', 'replace' );
 	wp_enqueue_style( 'lnt-horizontalTab', get_template_directory_uri().'/css/horizontalTab.css', array(), _S_VERSION );
-
+	wp_enqueue_style('lnt-globalStyle', get_template_directory_uri().'/css/globalStyle.css');
+	wp_enqueue_style('lnt-contactStyle', get_template_directory_uri().'/css/contactStyle.css');
+	wp_enqueue_style('lnt-stockStyle', get_template_directory_uri().'/css/stockStyle.css');
+	
 	wp_enqueue_script( 'lnt-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'lnt-script', get_template_directory_uri() . '/js/script.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'lnt-tabs', get_template_directory_uri() . '/js/Tabs.js', array(), _S_VERSION, true );
