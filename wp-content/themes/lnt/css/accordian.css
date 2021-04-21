@@ -1,0 +1,78 @@
+.ul {
+  list-style: none;
+  max-width: 1200px;
+
+  margin-bottom: 10%;
+}
+
+.accordian ul li {
+  float: left;
+  width: 16.666%;
+  height: 430px;
+  opacity: 0.4;
+  list-style-type: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.accordian ul li:hover,
+.accordian ul li:first-child ~ li:last-child {
+  width: 50%;
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.accordian ul li:hover ~ li:last-child {
+  width: 16.666%;
+  opacity: 0.4;
+}
+
+.accordian ul li:nth-child(1) {
+  background: url("./images/Agile-Co-create-Innovation-thumbnail.jpg") top
+    center no-repeat;
+  list-style-type: none;
+}
+
+.accordian ul li:nth-child(2) {
+  background: url("./images/Agile-Development-thumbnail.jpg") top right
+    no-repeat;
+}
+
+.accordian ul li:nth-child(3) {
+  background: url("./images/Agile-Remote-Agile-thumbnail.jpg") top center
+    no-repeat;
+}
+
+.accordian ul li:nth-child(4) {
+  background: url("./images/Agile-Transformative-thumbnail.jpg") top center
+    no-repeat;
+}
+
+/** Add cool filter efects **/
+.accordian ul li::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.accordian ul li:nth-child(1)::before {
+  background-color: rgba(255, 87, 34, 0.2);
+}
+
+.accordian ul li:nth-child(2)::before {
+  background-color: rgba(76, 175, 80, 0.25);
+}
+
+.accordian ul li:nth-child(3)::before {
+  background-color: rgba(33, 150, 243, 0.25);
+}
+
+.accordian ul li:nth-child(4)::before {
+  background-color: rgba(156, 39, 176, 0.2);
+}
+
+/*# sourceMappingURL=accordian.css.map */

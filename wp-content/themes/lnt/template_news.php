@@ -6,7 +6,7 @@ get_header();
 ?>
  </div>
             <figure>
-                <a href="http://localhost:8888/LTI_POC/"><img style="width:100%" src="<?php echo get_template_directory_uri();?>/images/Lti-img3.jpg" alt="http://localhost:8888/LTI_POC/"></a>
+                <a href="http://localhost/LTI_POC/"><img style="width:100%" src="<?php echo get_template_directory_uri();?>/images/Lti-img3.jpg" alt="http://localhost/LTI_POC/"></a>
             </figure>
         
 

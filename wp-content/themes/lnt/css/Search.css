@@ -1,0 +1,112 @@
+.Searchwrapper {
+  position: fixed;
+  transform: translateY(-50%, -50%);
+  background: rgba(170, 221, 238, 0.85);
+  width: 100%;
+  height: 100vh;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  top: 0px;
+  z-index: 99999;
+}
+.Searchwrapper .input {
+  background: #f6f6f6 !important;
+  color: #777;
+  margin-left: 15%;
+  width: 70%;
+  height: 15%;
+  margin-top: 25px;
+  padding: 20px 20px;
+  border: none;
+  font-weight: bold;
+}
+.Searchwrapper .input:focus {
+  background: #f6f6f6 !important;
+  color: #777;
+  margin-left: 15%;
+  width: 70%;
+  height: 15%;
+  margin-top: 25px;
+  padding: 20px 20px;
+  border: none;
+  font-weight: bold;
+  box-shadow: 1px 1px 10px 0px rgb(184, 178, 178);
+}
+.Searchwrapper .searchbtn {
+  background: #f6f6f6 !important;
+  border-width: 1px;
+  border-left-style: solid;
+
+  margin-top: 25px;
+  height: 15%;
+  width: 6%;
+  right: 8%;
+  position: relative;
+  cursor: pointer;
+}
+.Searchwrapper .searchbtn .fas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+.Searchwrapper .cancelbtn {
+  right: 8%;
+  background-color: #00008c;
+  height: 80px;
+  width: 5%;
+  margin-top: 0px;
+  position: relative;
+}
+.Searchwrapper .cancelbtn .fa {
+  color: #fff;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+#page-cont {
+  margin-top: 10%;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999999;
+  background-color: rgba(170, 221, 238, 0.85);
+}
+#info-one #test-cs #header {
+  background: rgba(233, 241, 241, 0.2);
+  /* background: rgba(167, 175, 175, 0.2); */
+  justify-content: flex;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12pt;
+  font-weight: bold;
+  height: auto;
+  padding: 10px 16px;
+  color: #00008c;
+}
+#info-one #test-cs {
+  background: rgba(233, 241, 241, 0.2);
+  height: auto;
+}
+#info-one #test-cs p {
+  padding: 15px 5px;
+  margin-left: 10%;
+  margin-right: 10%;
+  line-height: 1.1em;
+  font-size: 14pt;
+  font-weight: normal;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(212, 206, 206);
+  overflow: hidden;
+  color: #00008c;
+}
+nav .pagination {
+  left: -60%;
+  bottom: 10%;
+}

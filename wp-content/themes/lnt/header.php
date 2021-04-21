@@ -20,27 +20,47 @@
 
     
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/homeStyles.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/Search.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-	<?php wp_head(); ?>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+        <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+<div>
 <div class = "custom-Header">
+<div  id= "top_search_layout" style = "display:none;" class="Searchwrapper">
+            <input id="input-search-box" type="text" class="input" placeholder="what are you looking for?">
+            <div id="searchlayoutbtn" class="searchbtn">
+                <i  class="fas fa-search"></i>
+            </div>
+            <div class="cancelbtn">
+                <i class="fa fa-window-close"></i>
+            </div>
+
+     </div>
+     <div  style = "display:none;" id="page-cont" >
+     <div id='info-one'><div id='test-cs'><p id='header'>Here is what we found</p><p>Test Data & Environment Management</p><p>LTI positioned as a Leader in NelsonHall's Software Testing</p><p>LTI positioned as a 'Leader' for Digital Focus in NelsonHall NEAT for Digital Testing</p></div><nav><ul class='pagination justify-content-center fixed-bottom mb-5'><li class='page-item active'><a href='' class='page-link rounded-circle m-1'>1</a></li><li class='page-item'><a href='' class='page-link rounded-circle m-1'>2</a></li><li class='page-item'><a href='' class='page-link rounded-circle m-1'>3</a></li><li class='page-item'><a href='' class='page-link rounded-circle m-1'>4</a></li><li class='page-item' title='Next'><a href='' class='page-link rounded-circle m-1'><i class='fas fa-chevron-right text-primary'></i></a></li></ul></nav></div>
+    </div>
+     <!-- <div  id="page-cont">
+     </div> -->
         <div class="Navbar">
             <ul>
-                <li><i class="fa fa-search"></i></li>
+                <li><i id ="header_search_btn" class="fa fa-search"></i></li>
                 <li><a href="#">About Us</a>
                     <div class="sub-menu">
                         <ul>
                             <li><a href="#">Company</a></li>
-                            <li><a href="http://localhost:8888/LTI_POC/elementor-40/">News & Events</a></li>
+                            <li><a href="http://localhost/LTI_POC/elementor-40/">News & Events</a></li>
                             <li><a href="#">Blogs</a></li>
                             <li><a href="#">Podcasts</a></li>
                             <li><a href="#">Alliances</a></li>
                             <li><a href="#">Social Responsibilities</a></li>
                             <li><a href="#">Media kit</a></li>
-                            <li><a href="http://localhost:8888/LTI_POC/global-footprint/">Global Footprint</a></li>
+                            <li><a href="http://localhost/LTI_POC/global-footprint/">Global Footprint</a></li>
                         </ul></div>
                 
                 </li>
@@ -51,7 +71,7 @@
         <div class="menu-bar">
         <ul>
 
-            <a href="http://localhost:8888/LTI_POC/"><img class="img_icon" src="<?php echo get_template_directory_uri();?>/images/Lti-icon.jpg" alt="LTI icon"></a>
+            <a href="http://localhost/LTI_POC/"><img class="img_icon" src="<?php echo get_template_directory_uri();?>/images/Lti-icon.jpg" alt="LTI icon"></a>
             <li><a href="#">Industries</a>
                 <div class="sub-menu-1">
                     <ul>
@@ -181,6 +201,7 @@
                     </ul>
             </li>
         </ul>
-     </div>
+     </div>        
  </div>
-	 
+ 
+</div>

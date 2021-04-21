@@ -1016,8 +1016,8 @@ textarea {
   width: 35%;
 }
 #sticky-contact-form .sticky-contact-form-wrapp {
-  position: relative;
-  width: 90%;
+  position: absolute;
+  width: 50%;
   margin: 0 auto;
 }
 .page-template-template-industries h1,

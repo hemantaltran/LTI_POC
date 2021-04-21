@@ -7,20 +7,20 @@ get_header();
 <main id="primary" class="site-main">
 
 <div >
-             <a href="http://localhost:8888/LTI_POC/">
-            <img style="width:100%;" src="<?php echo get_template_directory_uri();?>/images/Lti-img3.jpg" alt="http://localhost:8888/LTI_POC/">
+             <a href="http://localhost/LTI_POC/">
+            <img style="width:100%;" src="<?php echo get_template_directory_uri();?>/images/Lti-img3.jpg" alt="http://localhost/LTI_POC/">
 </a>
         </div>
-<?php
+<!-- <?php
 while ( have_posts() ) :
-    the_post();?>
+    the_post();?> -->
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<!-- <header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+	</header>.entry-header -->
 
-	<?php lnt_post_thumbnail(); ?>
+	<!-- <?php lnt_post_thumbnail(); ?> -->
 
 	<div class="entry-content">
 		<div class="global">

@@ -102,7 +102,7 @@
       <div class="sticky-contact-form-wrapp">
          <div role="form" class="wpcf7" id="wpcf7-f1678-o1" lang="en-US" dir="ltr">
 <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-                   <div class="container-contact-box">
+                   <div style="margin-top:100px;" class="container-contact-box">
                 <div class="title">Contact us</div>
                 <div class="cancelbtn">
                     <i class="fa fa-window-close sticky-contact-form-close-btn"></i>

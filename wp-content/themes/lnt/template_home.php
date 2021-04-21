@@ -111,7 +111,7 @@ digital organization, and LTI is a key strategic partner in our ERP transformati
 <div class="content-text"><b>Marcus Galafassi</b></div>
 <p>VP and CIO-Otis Elevator Co</p>
 <div class="content-button">
-<a href="http://localhost:8888/LTI_POC/newsevent/" target="_top"><button class="button-shape">
+<a href="http://localhost/LTI_POC/newsevent/" target="_top"><button class="button-shape">
 View All</button></a>
 </div>
     </div>
@@ -122,7 +122,7 @@ View All</button></a>
 <div class="content-text"><b>Vijay SR</b></div>
 <p>AVP-Leader for Insurance Consulting and Transformation,CST</p>
 <div class="content-button">
-<a href="http://localhost:8888/LTI_POC/newsevent/" target="_top"><button class="button-shape">
+<a href="http://localhost/LTI_POC/newsevent/" target="_top"><button class="button-shape">
 View All</button></a>
 </div>
 
@@ -147,7 +147,16 @@ View All</button></a>
                  the_content();
              }?>
     </div>
-    
+    <div class="accordian">
+    <ul >
+            <li style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/Agile-Co-create-Innovation-thumbnail.jpg);"></li>
+            <li style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/Agile-Development-thumbnail.jpg);"></li>
+            <li style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/Agile-Remote-Agile-thumbnail.jpg);"></li>
+            <li style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/Agile-Transformative-thumbnail.jpg);"></li>
+            
+        </ul>
+
+    </div>
 <?php
 get_footer();
 ?>
