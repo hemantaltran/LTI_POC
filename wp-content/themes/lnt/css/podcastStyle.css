@@ -1,0 +1,296 @@
+.podcast-img{
+    position: relative;
+      text-align: center;
+      color:#00008c;
+    }
+    .text-on-img {
+        position: absolute;
+        top: 150px;
+        left: 40px;
+        font-size: 48px !important;
+        color: #232323;
+        font-family: 'BwModelicaLTI-Bold';
+        letter-spacing: 1px;
+      }
+    .podcast-box{
+        background-color:#fff;
+        width: 75%;
+        height: auto;   
+    }
+    .av-special-heading-tag{
+        margin-left: 40px;
+        font-family: BwModelicaLTI-Bold;
+        color:#00008c;
+        font-size: 1.9rem;
+        line-height: 50px;
+        margin-bottom: 50px;
+    }
+    .podcast-box p{
+        margin-left: 40px;
+        font-family: BwModelica-Regular !important;
+        font-weight: normal;
+        font-size: 18px;
+        margin-top: 30px;
+        line-height: 17pt;
+        color: #343434;
+    }
+    
+    .podcast-list{
+        width: 95%;
+        margin-top: 3%;
+        background:#fff;
+        padding: 1em;
+        font-family: sans-serif;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .podcast-inner-box{
+        margin-left: 10%;
+        width: 400px;
+        height: 380px;
+        position: relative; 
+        background-color:#fff;
+    }
+    .podcast-inner-box .img-icon-podcast{
+       margin-top: 6%;
+       height: 80px;
+       width: 80px;
+       display: inline-block;
+       position: absolute;
+       border-radius: 50%;
+    }
+    .podcast-inner-box p{
+        font-family: BwModelica-Regular !important;
+        font-weight: normal;
+        font-size: 10pt;
+        color: #343434;
+        padding-left: 60px;
+    }
+    
+    .podcast-inner-box .podcast-btn{
+        background-color:#00008c;
+        padding-right: 50%;
+        border: none;
+        color: white;
+        padding: 10px 15px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px 0px 100px;
+        position: absolute; 
+    }
+    
+    .podcast-inner-box .podcast-btn span{
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .podcast-inner-box .podcast-btn span:after{
+        content: '\00bb';
+        position: absolute;
+        top:0;
+        right: -20px;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .podcast-inner-box .podcast-btn:hover span{
+        padding-right:25px;
+    }
+    .podcast-inner-box .podcast-btn:hover span:after{
+        opacity: 1;
+        right: 0;
+    }
+    .podcast-inner-box .podcast-bottom-content{
+        margin-top:17%;
+        margin-left: 100px;
+        line-height: 1.4;
+    }
+    .podcast-inner-box .podcast-bottom-content .avia-testimonial-name{
+        font-family:sans-serif;
+        font-size: 10pt;
+        color:#00008c;
+    }
+    
+    .podcast-inner-box .podcast-bottom-content .avia-testimonial-subtitle{
+        font-family:sans-serif;
+        font-size: 10pt;
+        font-weight: normal;
+    }
+    
+    /* Reach-us-box */
+    
+    .container-reachus-box{
+        position: absolute;
+        display: inline-block;
+        margin-top: -330%;
+        margin-left: 73%;
+        max-width: 300px;
+        height: 480px;
+        width: 100%;
+        background-color:#c0f3f8;
+        padding: 25px 30px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        -o-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .container-reachus-box .reachus-title{
+        color:rgb(62, 62, 221);
+        font-family: "Open Sans", "Fira Sans", "Lucida Sans", sans-serif;
+        font-size: 25px;
+        text-align: center;
+        margin-left: 30%;
+        padding-bottom: 20%;
+        display: inline-block;
+    }
+    
+    .container-reachus-box form .user-input-details{
+        display: flex;
+        font-size: 12px;
+        font-family: sans-serif;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px 0 12px 0;
+    }
+    
+    form .user-input-details .input-reach-box{
+        margin-bottom: 15px;
+        width: calc(100% / 2 - 5px);
+    }
+    .user-input-details .input-reach-box .input-details{
+        display: block;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    .user-input-details .input-reach-box .input-details i{
+       color: red;
+       font-size: 15px;
+    }
+    
+    .user-input-details .input-reach-box input{
+        height: 25px;
+        width: 85%;
+        outline: none;
+        border: 1px solid #ccc;
+        padding-left: 15px;
+        font-size: 16px;
+        border-bottom-width: 1px;
+        transition: all 0.3s ease;
+    }
+    
+    .user-input-details .input-reach-box-two input{
+        height: 25px;
+        width: 95%;
+        line-height: 15pt;
+        outline: none;
+        border: 1px solid #ccc;
+        padding-left: 15px;
+        font-size: 16px;
+        border-bottom-width: 1px;
+        transition: all 0.3s ease;
+    }
+    .user-input-details .input-reach-box-two input:focus{
+        box-shadow:1px 1px 0px 0px rgb(184, 178, 178);
+    }
+    
+    .reach-content {
+        font-size: 8pt !important;
+        padding-top: 8%;
+        font-weight: bold;
+        line-height: 11pt;
+        text-decoration: none;
+        color: #232323 !important;
+    }
+    .reach-content .check-button{
+        font-size: 9pt !important;
+        font-weight: bold;
+        text-decoration: none;
+        color: #232323 !important;
+    }
+    .reach-content .para-content a{
+        text-decoration: none;
+        color: rgb(25, 173, 231);
+     }
+     .reach-content .para-content{
+        text-align: justify;
+        font-size: 8pt !important;
+        font-weight: bold;
+        margin-right: 20%;
+        text-decoration: none;
+        color: #232323 !important;
+     }
+     .btn-reachus-submit .reach-btn-submit{
+            background:rgb(28, 28, 141);
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 20px 2px 0px 60px;
+            cursor: pointer;
+            position: absolute; 
+          }
+    .btn-reachus-submit .reach-btn-submit:hover{
+        background-color: rgb(25, 173, 231);
+    }
+    .podcast-popup .podcast-popup-window{
+        position: fixed;
+        opacity: 0.5;
+        top:20%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        background: #000;
+        width: 100%;
+        height: 160vh;
+        z-index: 1;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .podcast-popup.active .podcast-popup-window{
+        transition: all 300ms ease-in-out;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    
+    .podcast-popup .podcast-content{
+        position: fixed;
+        bottom: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        background: #fff;
+        width: 50%;
+        height: 25%;
+        z-index: 1;
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        -o-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .podcast-popup.active .podcast-content{
+        transition: all 300ms ease-in-out;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    .podcast-popup .podcast-content audio{
+        margin-top: 6%;
+    }
+    .podcast-popup .podcast-close-btn{
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top:20px;
+        width: 30px;
+        height: 30px;
+        background: #222;
+        color: #fff;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+    }
+    
+    

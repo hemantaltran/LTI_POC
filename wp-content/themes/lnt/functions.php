@@ -10,6 +10,7 @@
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
 	define( '_S_VERSION', '1.3.0' );
+
 }
 
 if ( ! function_exists( 'lnt_setup' ) ) :
@@ -152,14 +153,20 @@ function lnt_scripts() {
 	wp_enqueue_style('lnt-stockStyle', get_template_directory_uri().'/css/stockStyle.css');
 	wp_enqueue_style( 'lnt-search', get_template_directory_uri().'/css/Search.css', array(), _S_VERSION );
 	wp_enqueue_style( 'lnt-accordian', get_template_directory_uri().'/css/accordian.css', array(), _S_VERSION );
+
 	wp_enqueue_style('lnt-blog', get_template_directory_uri().'/css/blog.css', array(), _S_VERSION );
 	
+	wp_enqueue_style('lnt-podcastStyle', get_template_directory_uri().'/css/podcastStyle.css', array(), _S_VERSION);
 
 	wp_enqueue_script( 'lnt-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'lnt-script', get_template_directory_uri() . '/js/script.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'lnt-tabs', get_template_directory_uri() . '/js/Tabs.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'lnt-serachscript', get_template_directory_uri() . '/js/search.js', array(), _S_VERSION, true );
+
 	wp_enqueue_script( 'lnt-blog', get_template_directory_uri() . '/js/blog.js', array(), _S_VERSION, true );
+
+	wp_enqueue_script( 'lnt-podcast', get_template_directory_uri() . '/js/podcast.js', array(), _S_VERSION, true );
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
