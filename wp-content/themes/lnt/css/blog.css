@@ -1,6 +1,13 @@
+.combineblog{
+  width: 100%;
+  height: auto;
+  
+}
+
 .blogs{
     margin-top: 2%;
     width: 70%;
+    
 }
 
   /* Float four columns side by side */
@@ -60,8 +67,10 @@
 
 /* Style the collapsible content. Note: hidden by default */
 .contentexp{
-  background-color: white;    
-  overflow: hidden;    
+  background-color:white;    
+  overflow: hidden;
+  margin-left: 70%;  
+  margin-top: -100%;  
 }
 
 .contentexp a {
@@ -84,11 +93,12 @@
   color:#00008c;
   cursor: pointer;
   padding: 18px;
-  width: 30%;
+  width: 100%;
   border: none;
   text-align: left;
   outline: none;
   font-size: 15px;
+  
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */

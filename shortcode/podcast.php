@@ -1,11 +1,11 @@
 <div class="podcast-audio-content">
   <div class="podcast-img">
-    <img style="height:350px; width:1300px;" class="img-icon-podcast" src="<?php echo get_template_directory_uri(); ?>/images/podcast-banner.png">
+    <img style="height:350px; width:100%;" class="img-icon-podcast" src="<?php echo get_template_directory_uri(); ?>/images/podcast-banner.png">
     <div class="text-on-img">Sound ideas from LTI</div>
 </div>
- 
 
- <div id="popup-wid"></div>
+
+<div id="popup-wid"></div>
 
 
 
