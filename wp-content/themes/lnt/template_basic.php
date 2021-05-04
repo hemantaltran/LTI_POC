@@ -13,6 +13,36 @@ get_header();
              }?>
     </div>
 
+    <div class="row">
+        <?php 
+        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+        $all_posts = new WP_Query(array('post_type' => 'post','paged' => $paged,'posts_per_page' => -1));
+        while ( $all_posts ->have_posts() ) : $all_posts ->the_post(); ?>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <a href="<?php echo get_the_permalink();?>">
+             <p>
+                 <?php 
+                    echo get_the_title();
+                 ?>
+             </p>
+             </a>
+             <div>
+                 <?php 
+                 echo get_the_excerpt(); 
+                 ?>
+             </div>
+             
+        </div>
+
+        <?php 
+        endwhile;
+        ?>
+
+    </div>
+
+    
+    
+
 <?php
 get_footer();
 ?>
