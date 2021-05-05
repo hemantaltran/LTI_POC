@@ -28,6 +28,9 @@
     
         <?php wp_head(); ?>
 </head>
+<script type="text/javascript">
+    var TemplateDirectoryUrl = "<?php echo get_template_directory_uri(); ?>";
+ </script>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div>

@@ -106,10 +106,14 @@ get_header();
          <div class="content-box">
     <br>
 <div class="content-title">Client Speak</div>
-<p><a href="#">Otis is committed to building a more agile, 
-digital organization, and LTI is a key strategic partner in our ERP transformation journey.</a></p>
-<div class="content-text"><b>Marcus Galafassi</b></div>
-<p>VP and CIO-Otis Elevator Co</p>
+<?php wp_reset_postdata();
+$testimonial_id = get_field('choose_testimonial');
+?>
+<p>
+	<a href="<?php echo get_the_permalink($testimonial_id); ?>"><?php echo get_the_title($testimonial_id); ?></a>
+</p>
+<div class="content-text"><b><?php echo get_field('testimonial_by',$testimonial_id); ?></b></div>
+<p><?php echo get_field('t_designation',$testimonial_id); ?></p>
 <div class="content-button">
 <a href="http://localhost/LTI_POC/newsevent/" target="_top"><button class="button-shape">
 View All</button></a>
@@ -118,9 +122,10 @@ View All</button></a>
          <div class="content-box2">
              <br>
             <div class="content-title">Blog</div>
-<p><a href="#">COVID-19 Impact Series : Healthcare <br> Transformation leveraging <br> IT innovation</a></p>
-<div class="content-text"><b>Vijay SR</b></div>
-<p>AVP-Leader for Insurance Consulting and Transformation,CST</p>
+            <?php $blog_id = get_field('choose_blog'); ?>
+<p><a href="<?php echo get_the_permalink($blog_id); ?>"><?php echo get_the_title($blog_id); ?></a></p>
+<div class="content-text"><b><?php echo get_field('t_designation',$blog_id); ?></b></div>
+<p><?php echo get_field('t_designation',$blog_id); ?></p>
 <div class="content-button">
 <a href="http://localhost/LTI_POC/newsevent/" target="_top"><button class="button-shape">
 View All</button></a>

@@ -25,4 +25,24 @@ function onserviceclick(){
     
 }
 
+$=jQuery;
+$('.blog_sidebar_category').click(function(){
+    var cat_id = $(this).attr('data-id');
+    $.ajax({
+        type: "POST", 
+        url: TemplateDirectoryUrl+"/posts.php", 
+        data: "cat_id="+cat_id,
+        success: function(result){ 
+          $(".blog_grid_wrap").html(result);
+        }
+      }); 
+});
 
+
+// jQuery('.alert_pagination a').live('click', function(e){
+//   e.preventDefault();
+//   var link = jQuery(this).attr('href');
+//   jQuery('#test').html('Loading...');
+//   jQuery('#test').load(link+'.blog_grid_wrap');
+  
+//   });
