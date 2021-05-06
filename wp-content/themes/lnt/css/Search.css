@@ -74,6 +74,7 @@
   position: absolute;
   width: 100%;
   height: 100vh;
+  position: fixed;
   z-index: 9999999;
   background-color: rgba(170, 221, 238, 0.85);
 }

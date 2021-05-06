@@ -109,19 +109,26 @@ jQuery("#searchlayoutbtn").on("click",function(){
 	console.log(Object.keys(pg1Data));
 	var value = jQuery("#input-search-box").val();
 	console.log(value);
+    jQuery.ajax({
+        type: "POST", 
+        url: TemplateDirectoryUrl+"/searchResult.php", 
+        data: "searchQuery="+value,
+        success: function(result){ 
+            console.log("success " + result);
+            jQuery("#page-cont").html(result);
+            jQuery("#page-cont").show();
+        }
+      }); 
+
+
 	if(value !==null && Object.keys(pg1Data).includes(value)){
 		console.log(pg1Data[value]);
-		jQuery("#page-cont").innerHTML = ("Hello <b>world</b>!");
+		jQuery("#page-cont").html("Hello <b>world</b>!");
 
 		jQuery("#page-cont").show();
 	}  else {
 		jQuery("#page-cont").hide();
-	}
-
-	// jQuery("#sticky-contact-form").slideDown();
-	// //dynamically add for homepage speed issue
-	
-	// jQuery("html.responsive").css("overflow", "hidden"); 
+	} 
 	return false;
 });
 
