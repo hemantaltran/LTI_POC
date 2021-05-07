@@ -195,133 +195,6 @@ body {
   background: #fff;
 }
 
-/* For Boxes */
-.content-list {
-  padding: 3em;
-  font-family: sans-serif;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 0px;
-}
-.content-box:nth-child(odd) {
-  padding: 10px;
-  max-width: 100%;
-  width: 100%;
-  height: 350px;
-  background: rgba(167, 175, 175, 0.2);
-  box-shadow: 0px 0px 0px 0px;
-  border-radius: 1px;
-  position: relative;
-}
-.content-box:nth-child(even) {
-  padding: 10px;
-  max-width: 100%;
-  width: 100%;
-  height: 350px;
-  background: rgba(167, 175, 175, 0.2);
-  box-shadow: 0px 0px 0px 0px;
-  border-radius: 1px;
-  position: relative;
-  outline: 0px;
-  border: none;
-}
-
-.content-box2 {
-  padding: 10px;
-  max-width: 100%;
-  margin-left: 10px;
-  width: 100%;
-  height: 350px;
-  background: rgba(167, 175, 175, 0.2);
-  box-shadow: 0px 0px 0px 0px;
-  border-radius: 1px;
-  position: relative;
-  outline: 0px;
-  border: none;
-}
-
-.content-box3 {
-  padding: 10px;
-  max-width: 100%;
-  margin-left: 20px;
-  width: 100%;
-  height: 350px;
-  background: rgba(167, 175, 175, 0.2);
-  box-shadow: 0px 0px 0px 0px;
-  border-radius: 1px;
-  position: relative;
-  outline: 0px;
-  border: none;
-}
-
-.content-box:nth-child(odd) a {
-  text-decoration: none;
-  color: black;
-}
-.content {
-  max-height: 100px;
-  max-width: 350px;
-}
-.content-img {
-  text-align: center;
-  height: 95%;
-  width: 95%;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0%);
-}
-.content-button {
-  padding: 10px;
-  text-align: center;
-}
-.content-box h3 {
-  margin: 10px;
-  font-size: 15px;
-  font-family: sans-serif;
-}
-.content-box a {
-  text-decoration: none;
-  margin-top: 1em;
-  padding-top: 15px;
-  font-size: 16px;
-  margin-top: 10px;
-  font-family: sans-serif;
-  color: blue;
-}
-.content-text {
-  margin-top: 1em;
-  padding-top: 15px;
-  font-size: 16px;
-  margin-top: 10px;
-  font-family: sans-serif;
-}
-.content-box p {
-  text-decoration: none;
-  margin-top: 1em;
-  padding-top: 10px;
-  font-size: 16px;
-  margin-top: 5px;
-  font-family: sans-serif;
-}
-.button-shape {
-  padding: 5px 10px;
-  border: none;
-  width: 100px;
-  border-radius: 15px;
-  background: rgb(33, 13, 218);
-  box-shadow: 1px 1px 1px rgba(4, 30, 66);
-  font-size: 18px;
-  transform: 2s;
-  outline: none;
-  color: white;
-}
-.button-shape:hover {
-  cursor: pointer;
-  background: rgb(130, 123, 211);
-  color: #000;
-}
-
 /* Old Slider - Radio Button/No Navigation Arrows*/
 
 .container {
@@ -893,4 +766,84 @@ form .user-details .input-box-two {
 }
 .button:focus {
   background-color: #f8c22e;
+}
+.home_features{
+  background-color: #e1e1e1;
+  padding: 30px 15px;
+  height: 375px;
+}
+.row.home_features_row{
+  max-width: 90%;
+  margin: 3% auto;
+}
+.home_features_wrap .home_features .content-title{
+  font-size: 18px;
+  padding-bottom: 5%;
+}
+.home_features_wrap .home_features p a{
+  text-align: justify;
+  text-decoration: none;
+  font-size: 16px;
+  color: #00008c;
+  top: 5%;
+} 
+.home_features_row .home_features_wrap .home_features .content-img-size .content-img{
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  display: block;
+}
+.home_features_wrap:first-child .home_features{
+  padding: 0;
+}
+.home_features_wrap:first-child .home_features img{
+  height: 375px;
+}
+.home_features_wrap .home_features #btn{
+  padding: 5px 10px;
+  border: none;
+  width: 100px;
+  background-color: #0000b2;
+  font-size: 18px;
+  color: white;
+  border-radius: none;
+  margin-left: 25%;
+}
+.home_features_wrap .home_features #btn:hover{
+  padding: 5px 10px;
+  border: none;
+  width: 100px;
+  background-color:#2727f0;
+  font-size: 18px;
+  color: white;
+  border-radius: none;
+}
+.home_features_wrap .home_features .blog-slide p a{
+  text-decoration: none;
+  font-size: 16px;
+  color: #00008c;
+  top: 5%;
+  text-align: justify;
+}
+
+ul.slick-dots button{
+  background-color: white;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+}
+ul.slick-dots button:before{
+  color: transparent !important;
+}
+.slick-dots li.slick-active button:before{
+  background-color: #00008c;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+.home_features_wrap:first-child{
+  padding-right: 0;;
+}
+.home_features_wrap:nth-child(2){
+  padding-left: 0;
 }
