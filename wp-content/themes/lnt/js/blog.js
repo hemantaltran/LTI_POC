@@ -1,17 +1,17 @@
-var coll = document.getElementsByClassName("collapsible");
-var i;
+// var coll = document.getElementById("collapsible");
+// var i;
 
-for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-            content.style.display = "none";
-        } else {
-            content.style.display = "block";
-        }
-    });
-}
+// for (i = 0; i < coll.length; i++) {
+//     coll[i].addEventListener("click", function () {
+//         this.classList.toggle("active");
+//         var content = this.nextElementSibling;
+//         if (content.style.display === "block") {
+//             content.style.display = "none";
+//         } else {
+//             content.style.display = "block";
+//         }
+//     });
+// }
 
 
 // jQuery("#service1").on("click",function(){
@@ -46,3 +46,9 @@ $('.blog_sidebar_category').click(function(){
 //   jQuery('#test').load(link+'.blog_grid_wrap');
   
 //   });
+
+$('.collapsible').click(function(){
+    //$('.services-list').toggle('slide');
+    $(this).parent().find('ul').toggle('slide');
+});
+

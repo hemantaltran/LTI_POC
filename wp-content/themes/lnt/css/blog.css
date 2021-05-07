@@ -4,10 +4,24 @@
   
 }
 
-.blogs{
-    margin-top: 2%;
-    width: 70%;
+.Blogstitle{
+  font-size: 1.8rem;
+    color: #00008c;
+    line-height: 34px;
+   margin: 10px;
+    font-weight: 700;
     
+}
+
+.combineblog .custom_border_top:before{
+  content: '';
+  display: block;
+  background-color: #e1e1e1;
+  width: 99%;
+  height: 1px;
+}
+.combineblog #blogs{
+  margin-top: 0;
 }
 
   /* Float four columns side by side */
@@ -43,11 +57,11 @@
     border: none; 
 }
 
-.blog-card .blog-header a{
+#blogtitle a{
     text-decoration: none;
     font-size:medium;
     color: #00008c;
-    line-height: 0.1;
+    /* line-height: 0.1; */
     text-align: justify;
 }
 
@@ -56,7 +70,7 @@
     
 }
 
-.blog-card .card-content{
+.combineblog .blog-content{
     color: #464649;
     padding-top: 5px;
     text-align: justify;
@@ -65,12 +79,34 @@
     
 }
 
+#pagination{
+  display: inline-block;
+  margin:30px 0;
+}
+
+#pagination a {
+  color: black;
+  float: inline-start;
+  padding: 8px 10px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border-radius :4px;
+}
+
+#pagination span.current {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 100%;
+  padding: 5px;
+}
+
+#pagination a:hover:not(.active) {background-color:#00CCFE ;}
+
 /* Style the collapsible content. Note: hidden by default */
 .contentexp{
   background-color:white;    
   overflow: hidden;
-  margin-left: 70%;  
-  margin-top: -100%;  
+   
 }
 
 .contentexp a {
@@ -92,7 +128,7 @@
   background-color:#f0f0f0;
   color:#00008c;
   cursor: pointer;
-  padding: 18px;
+  padding: 10px;
   width: 100%;
   border: none;
   text-align: left;
@@ -101,7 +137,7 @@
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.contentexp .active, .collapsible:hover {
+.active, .contentexp .collapsible:hover {
   background-color: #ccc;
 }
 
@@ -117,11 +153,6 @@
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
-#Blogcol{
-  width: 60%;
-  height: 10%;
-  background-color: red;
-}
 
 
 

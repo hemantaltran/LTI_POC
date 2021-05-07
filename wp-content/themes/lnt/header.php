@@ -58,7 +58,7 @@
                         <ul>
                             <li><a href="#">Company</a></li>
                             <li><a href="http://localhost/LTI_POC/elementor-40/">News & Events</a></li>
-                            <li><a href="#">Blogs</a></li>
+                            <li><a href="http://localhost/LTI_POC/blog/">Blogs</a></li>
                             <li><a href="http://localhost/LTI_POC/podcast/">Podcasts</a></li>
                             <li><a href="#">Alliances</a></li>
                             <li><a href="#">Social Responsibilities</a></li>

@@ -140,7 +140,7 @@ get_header();
                     ?>
                 </div>        
                 <div class="content-button">
-                    <a href="" target="_top"><button id="btn">View All</button></a>
+                    <a href="<?php echo get_site_url(); ?>/blog" target="_top"><button id="btn">View All</button></a>
                 </div>
         </div>
     </div>

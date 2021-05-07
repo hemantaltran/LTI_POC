@@ -117,18 +117,17 @@ jQuery("#searchlayoutbtn").on("click",function(){
             console.log("success " + result);
             jQuery("#page-cont").html(result);
             jQuery("#page-cont").show();
-        }
-      }); 
+        }      }); 
 
 
-	if(value !==null && Object.keys(pg1Data).includes(value)){
-		console.log(pg1Data[value]);
-		jQuery("#page-cont").html("Hello <b>world</b>!");
+	// if(value !==null && Object.keys(pg1Data).includes(value)){
+	// 	console.log(pg1Data[value]);
+	// 	jQuery("#page-cont").html("Hello <b>world</b>!");
 
-		jQuery("#page-cont").show();
-	}  else {
-		jQuery("#page-cont").hide();
-	} 
+	// 	jQuery("#page-cont").show();
+	// }  else {
+	// 	jQuery("#page-cont").hide();
+	// } 
 	return false;
 });
 
