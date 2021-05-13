@@ -4,6 +4,7 @@ Template Name: Home Page
  <?php echo do_shortcode('[smartslider3 slider="1"]');?>
 */
 get_header();
+echo do_shortcode('[contact-form-7 id="361" title="Contact form"]');
 ?>
 <div class="slider">
     <div class="slides">

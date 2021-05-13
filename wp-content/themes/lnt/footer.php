@@ -107,31 +107,31 @@
                 <div class="cancelbtn">
                     <i class="fa fa-window-close sticky-contact-form-close-btn"></i>
                    </div>
-                <form action="#">
+                <form class="frm_contact" method="POST">
                     <div class="user-details">
                         <div class="input-box">
                             <span class="details">First Name <i>*</i></span>
-                            <input type="text" required>
+                            <input type="text" name="first_name" class="first_name" required>
                         </div>
 
                         <div class="input-box">
                             <span class="details">Last Name<i>*</i></span>
-                            <input type="text" required>
+                            <input type="text" name="last_name" class="last_name" required>
                         </div>
 
                         <div class="input-box">
                             <span class="details">Email Address<i>*</i></span>
-                            <input type="text" required>
+                            <input type="text" name="email_address" class="email_address" required>
                         </div>
 
                         <div class="input-box">
                             <span class="details">Contact Number</span>
-                            <input type="text" required>
+                            <input type="text" name="contact_number" class="contact_number" required>
                         </div>
 
                         <div class="input-box">
                             <span class="details">Your Company Name <i>*</i></span>
-                            <input type="text" required>
+                            <input type="text" name="your_company_name" class="your_company_name" required>
                         </div>
 
                         <div class="input-box">
@@ -173,7 +173,7 @@
 
                         <div class="input-box">
                             <span class="details">Your Industry <i>*</i></span>
-                            <select name="country" class="select-box" aria-invalid="false">
+                            <select name="your_industry" class="select-box" aria-invalid="false">
                                 <option value=""></option>
                                 <option value="Banking &amp; Finance">Banking &amp; Finance</option>
                                 <option value="Insurance">Insurance</option>
@@ -193,7 +193,7 @@
                         </div>
                         <div class="input-box">
                             <span class="details">Service/Technologies Interested in <i>*</i></span>
-                            <select name="country" class="select-box" aria-invalid="false">
+                            <select name="service_technology_interested_in" class="select-box" aria-invalid="false">
                             <option value=""></option>
                             <option value="Automation">Automation</option>
                             <option value="Cloud">Cloud</option>
@@ -211,15 +211,15 @@
                         </div>
                         <div class="input-box">
                             <span class="details">Reffered by</span>
-                            <input type="text" required>
+                            <input type="text" name="reffered_by" required>
                         </div>
 
                         <div class="input-box-two">
                             <span class="details">Let us know how we can help you today</span>
-                            <input type="text">
+                            <input type="text" name="let_us_know_how_we_can_help_you_today">
                         </div>
                         <div class="input-name">
-                            <input type="checkbox" id="cb1" class="check-button">
+                            <input type="checkbox" id="cb1" class="check-button" name="is_agreed">
                             <label for="cb1" class="check">I agree to receive communication from LTI.<br>
                             </label>
                             <p>Refer<a> LTI privacy policy</a> to know more about how we maintain privacy about your data.</p>
@@ -230,10 +230,34 @@
                     </div>
                 </form>
             </div>
-<noscript>
-			<div class="wpcf7-response-output wpcf7-spam-blocked">Your browser does not support JavaScript!. Please enable javascript in your browser in order to get form work properly.</div>
-	</noscript><script type='text/javascript'>
+<script type='text/javascript'>
+$=jQuery;
+                        $('.frm_contact').submit(function(e){
+                            e.preventDefault();
+                            var first_name = $('.first_name').val();
+                            var last_name = $('.last_name').val();
+                            var email_address= $('.email_address').val();
+                            var contact_number = $('.contact_number').val();
+                            var your_company_name = $('.your_company_name').val();
+                            var country = $('select[name="country"]').val();
+                            var your_industry = $('select[name="your_industry"]').val();
+                            var service_technology_interested_in = $('select[name="service_technology_interested_in"]').val();
+                            var reffered_by = $('input[name="reffered_by"]').val();
+                            var let_us_know_how_we_can_help_you_today = $('input[name="let_us_know_how_we_can_help_you_today"]').val();
+                            var is_agreed = 'yes';
+                            
+                            //var data = ;
+                            
+                            $.ajax({
+                                type: "POST",
+                                url: TemplateDirectoryUrl+"/contact_data.php",
+                                data: 'first_name='+first_name+'&last_name='+last_name+'&email_address='+email_address+'&contact_number='+contact_number+'&your_company_name='+your_company_name+'&country='+country+'&your_industry='+your_industry+'&service_technology_interested_in='+service_technology_interested_in+'&reffered_by='+reffered_by+'&let_us_know_how_we_can_help_you_today='+let_us_know_how_we_can_help_you_today+'&is_agreed='+is_agreed,
+                                success: function(result){
+                                    //alert(result);
+                                }
+                            });
 
+                        });
 						if(contactform === undefined){
 							var contactform = [];
 						}
